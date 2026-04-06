@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Apartment</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0a2540;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0a2540;
+        }
+
+        button {
+            background: #0a2540;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #123a63;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- IMAGE -->
+
+        <div class="gallery">
+            <img src="inside1.jpg">
+            <img src="inside2.jpg">
+            <img src="inside3.jpg">
+
+        </div>
+        <button class="prev" onclick="scrollLeft()">❮</button>
+        <button class="next" onclick="scrollRight()">❯</button>
+
+        <h1>🌟 Modern 3-Bedroom Apartment</h1>
+        <p>📍 3 mins from Abraham Adesanya Roundabout, Lekki-Ajah</p>
+
+        <!-- FEATURES -->
+        <div class="section">
+            <h2>🏠 Features</h2>
+            <ul>
+                <li>📶 High-speed Wi-Fi</li>
+                <li>🛏️ En-suite bedrooms</li>
+                <li>🍳 Fully fitted kitchen</li>
+                <li>🔒 24/7 security</li>
+                <li>📺 Netflix & Prime Video</li>
+                <li>🚗 Parking space</li>
+            </ul>
+        </div>
+
+        <!-- PRICING -->
+        <div class="section">
+            <h2>💵 Pricing</h2>
+            <p class="price">1 Room: ₦100,000 / night</p>
+            <p class="price">2 Rooms: ₦200,000 / night</p>
+            <p class="price">Full Apartment: ₦300,000 / night</p>
+            <p>Caution Fee: ₦50,000</p>
+        </div>
+
+        <!-- BOOK BUTTON -->
+        <div class="section">
+            <a href="https://wa.me/2348062937553">
+                <button>📞 Book on WhatsApp</button>
+            </a>
+        </div>
+
+        <br>
+
+        <a href="index.html">
+            <button>⬅ Back</button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

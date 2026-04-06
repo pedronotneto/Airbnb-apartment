@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Apartment Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="slider">
+
+        <img class="slide" src="inside1.jpg">
+        <img class="slide" src="inside2.jpg">
+        <img class="slide" src="inside3.jpg">
+
+        <button class="prev" onclick="scrollLeft()">❮</button>
+        <button class="next" onclick="scrollRight()">❯</button>
+        <button onclick="alert('working')">Test</button>
+
+    </div>
+    <div class="gallery">
+        <img src="inside1.jpg">
+        <img src="inside2.jpg">
+        <img src="inside3.jpg">
+
+        <button class="prev" onclick="scrollLeft()">❮</button>
+        <button class="next" onclick="scrollRight()">❯</button>
+        <button onclick="alert('working')">Test</button>
+
+    </div>
+
+    <h1>🌟 Modern 3-Bedroom Apartment</h1>
+
+    <p>📍 3 mins from Abraham Adesanya Roundabout, Lekki-Ajah</p>
+
+    <h2>🏠 Features</h2>
+    <ul>
+        <li>Wi-Fi</li>
+        <li>En-suite bedrooms</li>
+        <li>Kitchen</li>
+        <li>24/7 Security</li>
+        <li>Netflix & Prime</li>
+    </ul>
+
+    <h2>💵 Pricing</h2>
+    <p>1 Room: ₦100,000</p>
+    <p>2 Rooms: ₦200,000</p>
+    <p>Full: ₦300,000</p>
+
+    <a href="index.html">
+        <button>⬅ Back</button>
+    </a>
+
+    <script>
+        window.onload = function () {
+            const slider = document.querySelector(".slider");
+            window.scrollLeft = function () {
+                slider.scrollBy({ left: -300, behavior: "smooth" });
+            };
+            window.scrollRight = function () {
+                slider.scrollBy({ left: 300, behavior: "smooth" });
+            };
+        };
+    </script>
+</body>
+
+
+</html>
